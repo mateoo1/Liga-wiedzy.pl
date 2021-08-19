@@ -1,0 +1,721 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(35, 6, 112);
+    background-image: url("../img/bg.jpeg");
+    background-attachment: fixed;
+    text-align: center;
+    color: rgba(240, 246, 255, 0.945);
+    font-size: 18px;
+}
+
+.bg {
+    background: rgba(0, 0, 0, 0);
+}
+
+#logo {
+    width: 213px;
+    height: 213px;
+    padding: 15px;
+}
+
+#logo:hover {
+    filter: grayscale(20%)
+}
+
+.enjoy-css {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 76px/1 Verdana, Geneva, sans-serif;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 7px 9px 6px rgba(0,0,0,0.5) , 6px 7px 2px rgba(0,0,0,0.5) , 5px 2px 3px rgba(0,0,0,0.5);
+    -webkit-transform: rotateX(-1.7188733853924696deg) rotateY(-20.053522829578814deg);
+    transform: rotateX(-1.7188733853924696deg) rotateY(-20.053522829578814deg);
+  }
+  
+
+input[type=text], input[type=password] {
+    display: block;
+    border: none;
+    background-color: rgb(116, 174, 25);
+    color:#000;
+    font-size: 20px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    display: block;
+    border: none;
+    background-color: rgb(162, 236, 43);
+    color:#000;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    -moz-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+}
+
+#answer {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    width: 16em;
+    height: 2em;
+    border-radius: 5px;
+}
+
+#answerIndex {
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 14em;
+    height: 1.8em;
+    border-radius: 5px;
+}
+
+/********** INDEX **********/
+
+.main_title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    color: rgb(228, 225, 225);
+    letter-spacing: 6px;
+}
+
+.titles {
+    font-size: 36px;
+    color: rgb(219, 219, 219);
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+
+.t3 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+#alert {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+/*ZASADY*/
+.rules {
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.rulesHeader{
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: solid 1px;
+    margin: 0em 2em 0em 2em;
+    padding: 0.25em;
+}
+
+#list {
+    margin-top: 1em;
+}
+
+.rules-textarea {
+    background: #313030;
+    color: rgb(204, 201, 201);
+    resize: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+.ul-rules {
+    list-style-type: none;
+    padding: 10px;
+  }
+
+.ul-rules > li {
+    padding: 10px;
+}
+
+.award {
+    padding-bottom: 30px;
+}
+
+/*********** GRA ***********/
+
+#panel {
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.playerInfo {
+    border-radius: 10px;
+    border-bottom: solid 1px;
+    margin: 10px 0px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*
+.pkt {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+*/
+
+.playerPanel {
+    border-top: solid 1px;
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px;
+    margin: auto;
+    background-color: #221644;
+}
+
+#corrAn {
+    margin: none;
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+}
+
+#Pdiv {
+    border-radius: 10px;
+    margin: none;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+}
+
+#timer {
+    margin: none;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+}
+
+#ok {
+    color: rgb(204, 255, 119);
+}
+
+#not {
+    color: rgb(255, 119, 119);
+}
+
+#Qdiv{
+    margin: 25px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.945);
+    width: 450px;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionAnimate {
+    animation-name: questionMoveIn;
+    animation-duration: 1s;
+}
+
+@keyframes questionMoveIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    80% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+#go_button {
+    margin: 0px;
+}
+
+#chances {
+    font-size: 20px;
+}
+
+#refreshInfo {
+    font-size: 16px;
+}
+
+#gameover {
+    margin: 22px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.945);
+    width: 500px;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_old {
+    border: solid 2px rgb(163, 233, 50);
+    border-radius: 5px;
+    background-color: rgb(163, 233, 50);
+    display: inline-block;
+    margin: 0px 10px;
+    width: 20px;
+    height: 30px;
+}
+
+.single_3 {
+    border: solid 2px rgb(163, 233, 50);
+    background-color: rgb(163, 233, 50);
+    display: inline-block;
+    margin: 2px -3px;
+    width: 100px;
+    height: 10px;
+}
+
+.single_2 {
+    border: solid 2px rgb(233, 200, 50);
+    background-color: rgb(233, 200, 50);
+    display: inline-block;
+    margin: 2px -3px;
+    width: 100px;
+    height: 10px;
+}
+
+.single_1 {
+    border: solid 2px rgb(233, 87, 50);
+    background-color: rgb(233, 87, 50);
+    display: inline-block;
+    margin: 2px -3px;
+    width: 100px;
+    height: 10px;
+}
+
+
+#pass, #pip, #pid, #DBcount {
+    visibility: hidden;
+}
+
+/*********** LIGA **********
+.top20 {
+    background-color: rgb(163, 233, 50, 0.0) !important;
+    font-size: 23px; 
+    border-bottom: solid 2px rgb(242, 242, 242);
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 10px !important;
+}
+*/
+#records {
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px !important;
+    background: rgb(67, 131, 175);
+    height: 40px;
+    border-bottom: solid 2px rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+.liga {
+    width: 600px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;    
+}
+
+th {
+    height: 40px;
+    text-align: left;
+    border-bottom: rgb(36, 52, 86) solid 3px;
+}
+
+td {
+    border-bottom: solid 2px rgb(36, 52, 86);
+    table-layout: fixed;
+    word-wrap:break-word;  
+    width: 400px;
+    height: 70px;
+}
+
+/*********** NAVBAR **********
+/* Add a black background color to the top navigation */
+ .topnav {
+    overflow: hidden;
+    background-color: rgb(37, 51, 77);
+    position: fixed ;
+    top: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(242, 242, 242);
+    text-align: center;
+    padding: 5px 14px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(136, 184, 58);
+    color: black;
+}
+
+
+/************ BUTTON ************/
+.play {
+    background-color: rgb(136, 184, 58); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(36, 52, 86);
+    color: rgba(240, 246, 255, 0.945); 
+    border-radius: 5px;
+    border: 0px solid rgba(240, 246, 255);
+}
+
+.play:hover {
+    background-color: rgb(136, 184, 58);
+    color: rgba(240, 246, 255);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    -moz-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+}
+
+.game {
+    width: 160px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 12px 28px;
+}
+
+.last{
+    width: 300px;
+    margin: 5px;
+    font-size: 17px;
+    padding: 16px 32px;
+}
+
+.pause {
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.reset {
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(36, 52, 86); 
+    color: rgba(240, 246, 255, 0.945); 
+    border-radius: 5px;
+    border: 0px solid rgba(240, 246, 255);
+    width: 120px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 8px 28px;
+}
+
+.reset-div {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.reset:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0px 0px 4px 1px  rgb(255, 0, 0);
+    -moz-box-shadow: 0px 0px 4px 1px  rgb(255, 0, 0);
+    box-shadow: 0px 0px 4px 1px  rgb(0, 0, 0);
+}
+
+
+/*BOARD*/
+.board {
+    margin: auto;
+}
+
+.board-form {
+    padding-left: 200px; 
+    padding-right: 200px;
+    padding-top: 20px; 
+    text-align: left;
+}
+
+.entry {
+    display: block;
+    margin-top: 10px;
+}
+
+#textarea{
+    width: 500px;
+    height: 140px;
+    resize: none;
+}
+
+.save {
+    width: 200px;
+    height: 30px;
+}
+
+span {
+    display: block;
+}
+
+.at {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: rgb(219, 255, 160);
+    text-align: left;
+    padding-left: 200px; 
+    padding-right: 200px; 
+}
+
+.dt {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 200px; 
+    padding-right: 200px; 
+}
+
+.et {
+    margin: auto;
+    padding-left: 200px; 
+    padding-right: 200px; 
+    padding-bottom: 50px; 
+    text-align: justify;
+
+}
+
+.board-textarea {
+    display: block;
+    border: none;
+    background-color: rgb(116, 174, 25);
+    color:#000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.board-textarea:focus {
+    display: block;
+    border: none;
+    background-color: rgb(162, 236, 43);
+    color:#000;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    -moz-box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+    box-shadow: 0px 0px 4px 1px rgb(136, 184, 58);
+}
+
+/*project*/
+.project {
+    margin: 50px 30px 20px 30px;
+    text-align: justify;
+}
+
+#contact {
+    margin: 1em 1em 0em 1em;
+    padding: 1em 2em;
+    text-align: left;
+    border-top: solid 1px;
+    font-size: 1em;
+}
+
+.warning {
+    text-align: center;
+}
+
+.warn {
+    width: 180px;
+    font-size: 20px;
+    padding: 16px 32px;
+}
+
+
+/*Cookie info*/
+
+#cookieinfo * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#cookieinfo {
+    position: fixed;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #323334; 
+    padding: 10px;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#cookieinfo h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cdd7da;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 7px;
+}
+
+#cookieinfo p {
+    font-size: 12px;
+    color: #afb4bc;
+    line-height: 1.5em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#cookieinfo a {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff6000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+#cookieinfo a:hover {
+    background-color: #ff7925; 
+}
+
+/*Footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 51, 77);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+  .rules {
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.rulesHeader{
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: solid 1px;
+    margin: 0em 2em 0em 2em;
+    padding: 0.25em;
+}
+
+.main_title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    color: rgb(228, 225, 225);
+    letter-spacing: 6px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(228, 225, 225);
+    letter-spacing: 4px;
+}
+
+.facebook {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.facebook-section {
+    padding-top: 30px;
+}
+
+.facebook-txt {
+    padding: 5px;
+}
+
+#fb {
+    margin-top: 0px;
+}
+
+/* PLAYER PLANEL */
+
+#puchar {
+    width: 175px;
+    height: 185px;
+    margin: 15px;
+}
+
+#puchar-gray {
+    width: 175px;
+    height: 185px;
+    filter: grayscale(100%);
+    opacity: 30%;
+    margin: 15px;
+}
+
+.profile-section {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.profile-name {
+    font-size: 35px;
+}
