@@ -1,6 +1,6 @@
 <?php
 
-require "./parameters.php";
+require "parameters.php";
 
 // establish connection
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=utf8";
