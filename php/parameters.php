@@ -2,9 +2,9 @@
 
 // Database crdentials
 // $dbHost = "172.10.3.2";
-$dbHost = "127.0.0.1";
+$dbHost = "localhost";
 $dbName = "test_db";
-$username = "liga";
+$username = "root";
 $password = "Dev321";
 
 $debugMode = TRUE;
