@@ -2,7 +2,7 @@
 
 // Database crdentials
 // $dbHost = "172.10.3.2";
-$dbHost = "localhost";
+$dbHost = "localhost:3306";
 $dbName = "test_db";
 $username = "root";
 $password = "Dev321";
