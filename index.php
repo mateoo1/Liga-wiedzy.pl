@@ -95,7 +95,7 @@
 <!-- statystyka odwiedzin -->
 <?php 
     //odnotowanie wizyty w tabeli traffic
-    require "php/cred.php";
+    require "./php/cred.php";
 
     $b = $_SERVER['HTTP_USER_AGENT'];
     $i = $_SERVER['REMOTE_ADDR'];
