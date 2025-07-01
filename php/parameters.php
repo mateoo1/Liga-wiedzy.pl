@@ -2,7 +2,8 @@
 
 // Database crdentials
 // $dbHost = "172.10.3.2";
-$dbHost = "localhost:3306";
+// $dbHost = "localhost:3306";
+$dbHost = "liga-mysql-svc:3306";
 $dbName = "test_db";
 $username = "root";
 $password = "Dev321";
