@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liga-apache
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.apache.replicaCount }}
+  selector:
+    matchLabels:
+      app: liga-apache
+  template:
+    metadata:
+      labels:
+        app: liga-apache
+    spec:
+      initContainers:
+        - name: git-clone
+          image: alpine/git
+          command:
+            - sh
+            - -c
+            - |
+              rm -rf /data/* /data/.* 2>/dev/null || true
+              git clone {{ .Values.repo.url }} /data
+          volumeMounts:
+            - name: shared-storage
+              mountPath: /data
+      containers:
+        - name: apache
+          image: {{ .Values.apache.image }}
+          ports:
+            - containerPort: {{ .Values.apache.port }}
+          volumeMounts:
+            - name: shared-storage
+              mountPath: /var/www/html
+      volumes:
+        - name: shared-storage
+          persistentVolumeClaim:
+            claimName: liga-shared-pvc

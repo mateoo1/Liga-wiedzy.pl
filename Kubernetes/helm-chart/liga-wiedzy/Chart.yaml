@@ -1,0 +1,5 @@
+apiVersion: v2
+name: liga-app
+version: 0.1.0
+description: Liga Wiedzy app Helm chart
+type: application

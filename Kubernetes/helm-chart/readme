@@ -1,0 +1,5 @@
+Nginx config (must be on root /):
+
+    location / {
+      proxy_pass http://liga-apache.liga.svc.cluster.local:80/;
+    }

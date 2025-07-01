@@ -1,0 +1,14 @@
+namespace: liga
+apache:
+  image: mateoo/php-7.2-pdo
+  port: 80
+  replicaCount: 1
+mysql:
+  image: mysql:8.0
+  rootPassword: Dev321
+  database: test_db
+  pvcStorage: 1Gi
+  storageClass: managed-csi
+repo:
+  url: https://github.com/mateoo1/Liga-wiedzy.pl.git
+  

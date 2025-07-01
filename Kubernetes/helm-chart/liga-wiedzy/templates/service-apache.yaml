@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: liga-apache
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: liga-apache
+  ports:
+    - port: 80
+      targetPort: {{ .Values.apache.port }}
+      name: http
+  type: ClusterIP
